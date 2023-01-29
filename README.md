@@ -1,2 +1,2 @@
-# rainbow_crayon
-![gitgun pages](https://kaniusii.github.io/rainbow_crayon/)
+# Rainbow Crayon
+![github pages](https://kaniusii.github.io/rainbow_crayon/)
