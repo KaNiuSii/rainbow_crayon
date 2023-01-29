@@ -1,0 +1,137 @@
+#circle {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%; 
+    top: 50%;
+    left: 50%;
+}
+#trail-container {
+  position: relative;
+  
+}
+
+#trail-container div {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 1;
+}
+#banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #4d4e4f;
+  z-index: 2;
+}
+#banner2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #4d4e4f;
+  z-index: 2;
+}
+#parent-element-of-banner-and-circle {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ctext {
+  position: relative;
+  font-family: Georgia, serif;
+  font-size: 70px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #eadb2e;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-align: center;
+}
+#tytul {
+  top: -125%;
+  left: -30%;
+}
+#text {
+  text-align: right;
+  font-size: 20px;
+  margin-right: 40px;
+}
+#text2 {
+  text-align: right;
+  font-size: 20px;
+  margin-right: 40px;
+}
+
+button {
+  position: relative;
+  
+  padding: 8px 12px;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 10;
+  top: -110%;
+  left: 50%;
+}
+
+button::before,
+button:after {
+  display: block;
+  position: absolute;
+  content: '';
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+
+
+/* slice */
+
+
+
+
+.slice::before,
+.slice::after {
+    width: 100%;
+    height: 100%;
+    background-color: palevioletred;
+}
+
+.slice::before {
+    top: -50%;
+    left: -100%;
+}
+
+.slice::after {
+    bottom: -50%;
+    right: -100%;
+}
+
+.slice:hover::before {
+    left: 0;
+}
+.slice:hover::after {
+    right: 0;
+}
